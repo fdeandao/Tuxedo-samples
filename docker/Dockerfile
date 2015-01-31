@@ -24,8 +24,8 @@ RUN echo root:samplesvm | chpasswd
 
 ADD tuxedo121300_64_Linux_01_x86.zip /home/tuxtest/temp/
 ADD install_tuxedo12.1.3.rsp /home/tuxtest/temp/
-ADD ../installers/simpapp_runme.sh /home/tuxtest/
-ADD ../installers/start_tlisten.sh /home/tuxtest/
+ADD simpapp_runme.sh /home/tuxtest/
+ADD start_tlisten.sh /home/tuxtest/
 
 #RUN chown tuxtest:tuxtest -R /u01
 RUN chown tuxtest:tuxtest -R /home/tuxtest
